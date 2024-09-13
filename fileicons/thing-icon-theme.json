@@ -1,0 +1,20 @@
+{
+	"iconDefinitions": {
+	  "thingIcon": {
+		"iconPath": "green.png"  // Path to your 32x32 icon
+	  }
+	},
+	"fileExtensions": {
+	  "thx": "thingIcon",
+	  "thg": "thingIcon",
+	  "thing": "thingIcon",
+	  "thingx": "thingIcon"
+	},
+	"folderNames": {
+	  "thing": "thingIcon"
+	},
+	"languageIds": {
+	  "thx": "thingIcon"
+	}
+  }
+  

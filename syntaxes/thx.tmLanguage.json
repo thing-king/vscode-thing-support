@@ -1,0 +1,40 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "scopeName": "source.thx",
+    "patterns": [
+        {
+            "include": "source.js"
+        },
+        {
+            "include": "source.jsx"
+        },
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#functions"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.thx",
+                    "match": "//.*$"
+                }
+            ]
+        },
+        "functions": {
+            "patterns": [
+                {
+                    "name": "keyword.function.thx",
+                    "match": "\\bfunction\\b"
+                },
+                {
+                    "name": "variable.parameter.thx",
+                    "match": "\\b(inputs|input|in|ins|output|outputs|out|outs)\\b"
+                }
+            ]
+        }
+    }
+}

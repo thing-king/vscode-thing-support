@@ -1,0 +1,52 @@
+{
+	"name": "@thing-king/vscode-thing-support",
+	"displayName": "Thing Support",
+	"description": "Support for the Thing universe.",
+	"version": "1.0.0",
+	"publisher": "thing-king",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"icon": "./fileicons/green.png",
+	"contributes": {
+		"languages": [
+			{
+				"id": "thx",
+				"aliases": [
+					"thing",
+					"thx"
+				],
+				"extensions": [
+					".thx",
+					".thg",
+					".thing",
+					".thingx"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "thx",
+				"scopeName": "source.thx",
+				"path": "./syntaxes/thx.tmLanguage.json"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "thing-icon-theme",
+				"label": "Thing Icon Theme",
+				"path": "./fileicons/thing-icon-theme.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "thx",
+				"path": "./snippets/thx.code-snippets"
+			}
+		]
+	}
+}
